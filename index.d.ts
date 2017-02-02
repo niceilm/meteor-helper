@@ -1,5 +1,5 @@
-import { Observable } from 'rxjs';
 declare module 'meteor/flynn:meteor-helper' {
+  import { Observable } from 'rxjs';
   class MeteorPubSub<T> {
     name: string;
 
