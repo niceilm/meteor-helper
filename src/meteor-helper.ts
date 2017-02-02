@@ -4,9 +4,6 @@ import { ValidatedMethod } from 'meteor/mdg:validated-method';
 import { MeteorObservable } from 'meteor-rxjs';
 import { Observable } from 'rxjs';
 
-type Config = PublishCompositeConfig<any>|PublishCompositeConfig<any>[];
-type ConfigFunc = (...args: any[]) => PublishCompositeConfig<any>|PublishCompositeConfig<any>[];
-
 export class MeteorPubSub<T> {
   constructor(public name: string) {
   }
@@ -21,7 +18,7 @@ export class MeteorPubSub<T> {
     });
   }
 
-  registerComposite(config: Config|ConfigFunc): void {
+  registerComposite(config: PublishCompositeConfig<any> | PublishCompositeConfig<any>[] | ((...args: any[]) => PublishCompositeConfig<any> | PublishCompositeConfig<any>[])): void {
     const publishName = this.name;
     //noinspection TypeScriptValidateTypes
     Meteor.publishComposite(publishName, function (...args) {

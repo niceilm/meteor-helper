@@ -1,0 +1,8 @@
+node_modules/
+typings/
+LICENSE
+README.md
+typings.json
+tsconfig.json
+src/
+.gitignore
