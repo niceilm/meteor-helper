@@ -1,17 +1,17 @@
 {
   "name": "meteor-helper",
-  "version": "1.0.0",
+  "version": "0.0.3",
   "description": "",
-  "main": "dist/meteor-helper.js",
+  "main": "index.js",
   "typescript": {
-    "definition": "dist/meteor-helper.d.ts"
+    "definition": "index.d.ts"
   },
   "scripts": {
     "build": "tsc"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "babel-runtime": "6.22.0",
     "meteor-rxjs": "niceilm/meteor-rxjs#1d60117d96df39d689f8aab8c483070032f9c071",

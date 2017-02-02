@@ -80,4 +80,4 @@ var MeteorMethod = (function () {
     return MeteorMethod;
 }());
 exports.MeteorMethod = MeteorMethod;
-//# sourceMappingURL=meteor-helper.js.map
+//# sourceMappingURL=index.js.map

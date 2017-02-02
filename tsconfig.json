@@ -9,11 +9,10 @@
     "emitDecoratorMetadata": true,
     "removeComments": false,
     "noImplicitAny": false,
-    "suppressImplicitAnyIndexErrors": false,
-    "outDir": "dist"
+    "suppressImplicitAnyIndexErrors": false
   },
   "files": [
-    "src/meteor-helper.ts"
+    "index.ts"
   ],
   "include": [
     "typings/**/*"
